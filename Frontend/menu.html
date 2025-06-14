@@ -1,0 +1,82 @@
+<!-- Menu Page (menu.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Food Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <style>
+        #addMenuItemBtn {
+            position: absolute;
+            top: 130px;
+            right: 200px;
+            font-size: 28px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 10;
+            display: none; /* Shown only to admin */
+        }
+        .edit-delete-buttons {
+            margin-top: 10px;
+        }
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            margin-right: 5px;
+            font-size: 14px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .edit-btn {
+            background-color: #007bff;
+            color: white;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Food Menu for Flight <span id="flightNumber"></span></h1>
+    </header>
+    <div class="profile-container">   
+    </div>
+
+    <!-- Admin Floating Button -->
+    
+    <input type="text" id="searchBox" placeholder="Search food items..." style="margin: 10px; padding: 5px; width: 425px;margin-top:127px; font-size: 16px;">
+
+    <section class="menu">
+        <button id="addMenuItemBtn" title="Add Menu Item">+</button>
+        <div id="adminControls" style="display: none; text-align: center; margin-top: 20px;">
+            <form id="addMenuForm" style="margin-top: 15px;">
+                <input type="text" id="foodItem" placeholder="Food Item" required style="padding: 8px; margin: 5px; border-radius: 5px;" />
+                <input type="number" id="price" placeholder="Price" step="0.01" required style="padding: 8px; margin: 5px; border-radius: 5px;" />
+                <button type="submit" class="flight-btn">Add Item</button>
+            </form>
+        </div>
+
+        <ul class="menu-list">
+            <!-- Menu items will be dynamically loaded here -->
+        </ul>
+
+        <!-- Admin Controls: Visible when + is clicked -->
+        
+    </section>
+
+    <footer>
+        <button class="flight-btn gray-clr" onclick="window.location.href='index.html'">Back to Flights</button>
+        <button class="flight-btn blue-clr" onclick="goToCart()">View Cart</button>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

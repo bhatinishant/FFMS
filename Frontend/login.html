@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login - Flight Food Management</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+ 
+   <div class="main-container">
+
+    <!-- Left Panel: Image + Quote -->
+    
+      <div class="quote">
+        <h1>"Great journeys deserve great meals."</h1>
+        <p>- Flight Food Management System</p>
+      </div>
+ 
+
+    <!-- Right Panel: Login Form -->
+    <div class="login-container">
+      <form id="loginForm" class="login-box">
+        <h2>Login</h2>
+        <label>
+          Email:
+          <input type="email" id="loginEmail" required />
+        </label>
+        <label>
+          Password:
+          <input type="password" id="loginPassword" required />
+        </label>
+        <button type="submit">Login</button>
+        <p id="loginError" class="error hidden">Invalid email or password</p>
+        <p style="text-align:center;">Don't have an account? <a href="signup.html">Sign up here</a></p>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

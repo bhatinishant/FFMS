@@ -1,0 +1,60 @@
+/* Profile Styles */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 15px;
+  }
+  
+  .profile-card h2 {
+    margin: 10px 0 5px;
+  }
+  
+  .profile-card p {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .profile-card label {
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .profile-card input,
+  .profile-card select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

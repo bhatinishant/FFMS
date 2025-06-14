@@ -1,0 +1,255 @@
+/* Menu Page Styles (menu.css) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    text-align:center; 
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 50%;
+}
+
+.menu {
+    margin: 60px;
+    margin-top: 3px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-list li {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.menu-list h3 {
+    margin: 0;
+}
+
+footer {
+    margin: 20px;
+}
+
+.flight-btn{
+    background-color: green;
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+
+} 
+.add-item{
+    float: right;
+    background-color: green;
+}
+
+.gray-clr{
+    background-color: gray;
+}
+
+.blue-clr{
+    background-color: rgb(77, 77, 198);
+
+}
+
+/* Green Pop-up Notification Styles */
+.popup {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;  /* Green Background */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 9999;
+}
+
+.popup.show {
+    top: 0;
+    opacity: 1;
+}
+
+.qty-btn {
+    padding: 4px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.qty {
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.menu-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-controls .add-item {
+    float: none; /* override float */
+    background-color: green;
+}
+
+.menu-list li {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list li > .menu-item-row {
+    width: 100%;
+}
+.qty-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.qty-wrapper button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.qty-wrapper .qty {
+    min-width: 20px;
+    text-align: center;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 999;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    }
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    min-width: 180px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}
+
+.menu-actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Optional: Make buttons uniform width */
+.menu-actions button {
+    min-width: 100px;
+    text-align: center;
+}
+
+.edit-btn,
+  .delete-btn,
+  .save-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-btn {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .edit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .save-btn {
+    background-color: #17a2b8;
+    color: white;
+  }
+  
+  .save-btn:hover {
+    background-color: #117a8b;
+  }
+  
+  .delete-btn {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-btn:hover {
+    background-color: #c82333;
+  }
+
+
+
+

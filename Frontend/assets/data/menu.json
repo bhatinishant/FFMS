@@ -1,0 +1,24 @@
+{
+    "menus": {
+        "6E203": [
+            {
+                "name": "Chicken Sandwich",
+                "price": 10
+            },
+            {
+                "name": "Veggie Wrap",
+                "price": 8
+            }
+        ],
+        "BA456": [
+            {
+                "name": "Pasta Salad",
+                "price": 12
+            },
+            {
+                "name": "Fruit Platter",
+                "price": 9
+            }
+        ]
+    }
+}

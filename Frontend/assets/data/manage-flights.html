@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manage Flights</title>
+  <link rel="stylesheet" href="manage-flights.css" />
+</head>
+<body>
+  <header>
+    <h1>Manage Flights</h1>
+    <button id="addFlightBtn">+ Add Flight</button>
+  </header>
+
+  <section id="flightListSection">
+    <table>
+      <thead>
+        <tr>
+          <th>Flight No</th>
+          <th>Departure</th>
+          <th>Arrival</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="flightTableBody">
+        <!-- Flights will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Flight Form Modal -->
+  <div id="flightFormModal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modalTitle">Add Flight</h2>
+      <form id="flightForm">
+        <label>Flight No: <input type="text" id="flightNo" required /></label>
+        <label>Departure: <input type="text" id="departure" required /></label>
+        <label>Arrival: <input type="text" id="arrival" required /></label>
+        <label>Date: <input type="date" id="flightDate" required /></label>
+        <label>Time: <input type="time" id="flightTime" required /></label>
+        <label>Status:
+          <select id="status">
+            <option value="Scheduled">Scheduled</option>
+            <option value="Delayed">Delayed</option>
+            <option value="Cancelled">Cancelled</option>
+          </select>
+        </label>
+        <button type="submit">Save</button>
+        <button type="button" id="cancelBtn">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="manage-flights.js"></script>
+</body>
+</html>

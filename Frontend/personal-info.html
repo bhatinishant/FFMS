@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Info</title>
+  <link rel="stylesheet" href="personal-info.css">
+</head>
+<body>
+  <div class="info-container">
+    <h2>Your Profile</h2>
+
+    <div id="statusMessage" class="hidden success-message">Profile updated successfully!</div>
+    <div id="pnrError" class="error-text hidden">❗ Invalid PNR and Seat combination.</div>
+    <div id="pnralreadyUseError" class="error-text hidden">❗ PNR and Seat combination Already in Use.</div>
+    <div id="expiredMessage" class="error-message hidden">⚠️ Your PNR number has expired or Blank. You cannot place orders. Please update your profile with an active PNR to continue.</div>
+
+    <div class="info-card">
+      <form id="profileForm">
+        <div class="form-group"><label class="label">👤 Name:</label> <input type="text" id="name" name="name" disabled></div>
+        <div class="form-group"><label class="label">📧 Email:</label> <input type="email" id="email" name="email" disabled></div>
+        <div class="form-group"><label class="label">📞 Contact:</label> <input type="text" id="contact" name="contact" disabled></div>
+        <div class="form-group"><label class="label">⚧ Gender:</label> <input type="text" id="gender" name="gender" disabled></div>
+        <div class="form-group"><label class="label">🏠 Address:</label> <input type="text" id="address" name="address" disabled></div>
+        <div class="form-group"><label class="label">🎫 PNR Number:</label> <input type="text" id="pnr" name="pnr" disabled></div>
+        <div class="form-group"><label class="label">💺 Seat Number:</label> <input type="text" id="seat" name="seat" disabled></div>
+        <div class="form-group"><label class="label">📅 Expiration Date:</label> <input type="date" id="expiry" name="expiry" disabled></div>
+
+        <button type="button" id="editBtn">Edit</button>
+        <button type="button" id="cancelBtn" class="hidden">Cancel</button>
+        <button type="submit" id="saveBtn" class="hidden">Save</button>
+      </form>
+
+      <button id="flightBtn" class="flight-btn gray-clr" onclick="window.location.href='index.html'">Back to Flights</button>
+      <button id="flightBtn" class="flight-btn" onclick="window.location.href='login.html'">Logout</button>
+    </div>
+  </div>
+
+  <script src="personal-info.js"></script>
+</body>
+</html>

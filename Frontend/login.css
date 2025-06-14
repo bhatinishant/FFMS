@@ -1,0 +1,99 @@
+.main-container {
+  display: flex;
+  height: 100vh;
+  background: url('/images/flight-food.jpg') center/cover no-repeat;
+  flex: 1;
+   position: relative;
+  justify-content: center;
+  align-items: center;
+  color: rgb(10, 0, 0);
+}
+
+.image-panel::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 40px;
+}
+
+.quote h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.quote p {
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* Right Panel: Login box */
+.login-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black; /* This sets the font color */
+}
+
+/* Existing styles */
+.login-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.login-box label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+

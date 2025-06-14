@@ -1,0 +1,16 @@
+{
+    "flights": [
+        {
+            "airline": "American Airlines",
+            "flightNumber": "AA123",
+            "departure": "10:00 AM",
+            "arrival": "2:00 PM"
+        },
+        {
+            "airline": "British Airways",
+            "flightNumber": "BA456",
+            "departure": "11:30 AM",
+            "arrival": "3:30 PM"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<!-- Flight Food Management System - Home Page (index.html) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Food Management System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Flight Food Management System</h1>
+    </header>
+    <div class="profile-container">   
+    </div>
+    
+    <section class="flights">
+        
+        <!-- Simple form for adding flights (initially hidden) -->
+        <form id="addFlightForm" class="hidden">
+            <input type="text" id="airline" placeholder="Airline" required>
+            <input type="text" id="flightNumber" placeholder="Flight Number" required>
+            <input type="text" id="departure" placeholder="Departure" required>
+            <input type="text" id="arrival" placeholder="Arrival" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <h2>Available Flights</h2>
+        
+        <input type="text" id="searchBox" placeholder="Search flights..." style="margin-bottom: 15px; padding: 8px; width: 100%;">
+
+        <div class="flight-list">
+            <!-- Flight cards will be dynamically loaded here -->
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

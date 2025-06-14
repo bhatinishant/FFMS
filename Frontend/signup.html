@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Signup - Flight Food Management</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+  <div class="login-container">
+    <form id="signupForm" class="login-box">
+      <h2>Sign Up</h2>
+      <label>
+        Full Name:
+        <input type="text" id="signupName" required />
+      </label>
+      <label>
+        Contact:
+        <input type="text" id="signupContact" placeholder="+91-1234567890" maxlength="15" required />
+      </label>
+      <label>
+        Address:
+        <input type="address" id="signupAddress" required />
+      </label>
+      <label>
+        Gender:
+        <select id="signupGender" required>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+      <label>
+        Email:
+        <input type="email" id="signupEmail" required />
+      </label>
+      <label>
+        Password:
+        <input type="password" id="signupPassword" required />
+      </label>
+      <label>
+        Role:
+        <select id="signupRole" required>
+          <option value="" disabled selected>Select Role</option>
+          <option value="Admin">Admin</option>
+          <option value="Passenger">Passenger</option>
+        </select>
+        <!-- Admin Fields -->
+        <div id="adminFields" style="display: none; margin-top: 10px;">
+          <input type="text" id="employeeId" placeholder="Enter Employee ID">
+          <small id="empIdError" style="color:red; display:none;">Invalid Employee ID</small>
+          <input type="email" id="workEmail" placeholder="Enter Work Email">
+          <input type="text" id="passkey" placeholder="Enter Employee passkey">
+        </div>
+
+        <!-- Passenger Fields -->
+        <div id="passengerFields" style="display: none; margin-top: 10px;">
+          <input type="text" id="pnrNumber" placeholder="Enter PNR Number">
+          <input type="text" id="seatNumber" placeholder="Enter Seat Number">
+        </div>
+      </label>
+      <button type="submit">Register</button>
+      <p style="margin-top:10px;text-align:center;">Already have an account? <a href="login.html">login here</a></p>
+      <p id="signupMessage" class="error hidden"></p>
+    </form>
+  </div>
+
+  <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: -1px;
+    padding: 1px;
+}
+
+
+
+/* Main Section */
+.history {
+    width: 80%;
+    margin: 20px auto;
+    padding: 10%;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+}
+
+.history-list li {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #2a9d8f; /* Highlight each order with a colored line */
+}
+
+.history-list li .order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.history-list li .order-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #2a9d8f;
+}
+
+.history-list li .order-header span {
+    font-size: 14px;
+    color: #777;
+}
+
+.history-list li .order-details {
+    font-size: 16px;
+    color: #333;
+}
+
+.history-list li .order-details div {
+    margin-bottom: 8px;
+}
+
+.history-list li .order-details small {
+    font-size: 12px;
+    color: #777;
+}
+
+/* No History Message */
+.no-history {
+    text-align: center;
+    color: #999;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Button Styling */
+.flight-btn {
+    background-color: #2a9d8f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+}
+
+.flight-btn:hover {
+    background-color: #21867a;
+}
+
+.flight-btn.gray-clr {
+    background-color: #6c757d;
+}
+
+.flight-btn.gray-clr:hover {
+    background-color: #5a6368;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+}
+
+footer button {
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .history {
+        width: 90%;
+    }
+
+    .history-list li {
+        padding: 15px;
+    }
+}
+.profile-dropdown {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 999;
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    min-width: 180px;
+    overflow: hidden;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f5f5f5;
+}

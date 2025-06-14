@@ -1,0 +1,87 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Full screen container with center alignment */
+  .login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+  }
+  
+  /* Signup box styling */
+  .login-box {
+    width: 350px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading */
+  .login-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #007BFF;
+  }
+  
+  /* Label and input styling */
+  .login-box label {
+    display: block;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Input and select fields */
+  .login-box input,
+  .login-box select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+  }
+  
+  .login-box input:focus,
+  .login-box select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Submit button */
+  .login-box button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-box button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error or confirmation message */
+  .error {
+    margin-top: 15px;
+    color: red;
+    text-align: center;
+    font-size: 0.9em;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

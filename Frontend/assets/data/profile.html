@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <section class="profile-container">
+    <div class="profile-card">
+      <img src="https://via.placeholder.com/120" alt="Profile Picture" class="profile-pic">
+      <h2 id="profileName">John Doe</h2>
+      <p id="profileRole">Passenger</p>
+
+      <form id="profileForm">
+        <label>
+          Email:
+          <input type="email" id="email" value="john@example.com" disabled>
+        </label>
+        <label>
+          Phone:
+          <input type="tel" id="phone" value="+1234567890" disabled>
+        </label>
+        <label>
+          Preferred Meal:
+          <select id="mealType" disabled>
+            <option value="Veg">Veg</option>
+            <option value="Non-Veg">Non-Veg</option>
+            <option value="Vegan">Vegan</option>
+          </select>
+        </label>
+        <div class="button-group">
+          <button type="button" id="editBtn">Edit Profile</button>
+          <button type="submit" id="saveBtn" class="hidden">Save</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="profile.js"></script>
+</body>
+</html>
